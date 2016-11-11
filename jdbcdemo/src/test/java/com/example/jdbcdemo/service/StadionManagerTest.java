@@ -141,8 +141,7 @@ public void checkEditing(){
 		assertEquals(1,MeczManager.addMecz(Mecz));
 		assertEquals(1,StadionManager.addStadion(Stadion));
 		
-		// tutaj poiwnno sypnac sqlexception
-		System.out.print("\n/////////////////\ntutaj poiwnno sypnac sqlexception\n/////////////////\n");
+		
 		assertEquals(0,StadionManager.editStadion(Stadion_edit));
 		
 		List<Stadion> Stadiony = StadionManager.getAllStadiony();
@@ -151,7 +150,7 @@ public void checkEditing(){
 		assertEquals(NAZWA_1, StadionRetrieved.getNazwa());
 		assertEquals(miasto_1, StadionRetrieved.getmiasto());
 		assertEquals(Mecz_1, StadionRetrieved.getmecz());
-		System.out.print("\n/////////////////\nKoniec tego testu\n/////////////////\n");
+		
 				
 	}
 
